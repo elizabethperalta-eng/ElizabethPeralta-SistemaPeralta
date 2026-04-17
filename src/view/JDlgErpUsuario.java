@@ -16,7 +16,47 @@ public class JDlgErpUsuario extends javax.swing.JDialog {
     public JDlgErpUsuario(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        setTitle("Cadastro de Usuários");
+        setLocationRelativeTo(null);
     }
+    
+       public void habilitar(){
+       jTxtCodigo.setEnabled(true);
+       jTxtNome.setEnabled(true);
+       jTxtApelido.setEnabled(true);
+       jTxtCpf.setEnabled(true);
+       jTxtDataNascimento.setEnabled(true);
+       jCboNivel.setEnabled(true);
+       jPwfSenha.setEnabled(true);
+       jCboAtivo.setEnabled(true);
+       jBtnConfirmar.setEnabled(true);
+       jBtnCancelar.setEnabled(true);
+       jBtnIncluir.setEnabled(false);
+       jBtnAlterar.setEnabled(false);
+       jBtnExcluir.setEnabled(false);
+       jBtnPesquisar.setEnabled(false);
+
+    }
+       public void desabilitar(){
+       jTxtCodigo.setEnabled(false);
+       jTxtNome.setEnabled(false);
+       jTxtApelido.setEnabled(false);
+       jTxtCpf.setEnabled(false);
+       jTxtDataNascimento.setEnabled(false);
+       jCboNivel.setEnabled(false);
+       jPwfSenha.setEnabled(false);
+       jCboAtivo.setEnabled(false);
+       jBtnConfirmar.setEnabled(false);
+       jBtnCancelar.setEnabled(false);
+       jBtnIncluir.setEnabled(true);
+       jBtnAlterar.setEnabled(true);
+       jBtnExcluir.setEnabled(true);
+       jBtnPesquisar.setEnabled(true);
+    }
+
+
+
+     
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -88,6 +128,11 @@ public class JDlgErpUsuario extends javax.swing.JDialog {
 
         jBtnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
         jBtnCancelar.setText("Cancelar");
+        jBtnCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnCancelarActionPerformed(evt);
+            }
+        });
 
         jBtnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
         jBtnExcluir.setText("Excluir");
@@ -129,34 +174,33 @@ public class JDlgErpUsuario extends javax.swing.JDialog {
                             .addComponent(jLabel5)
                             .addComponent(jPwfSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jBtnAlterar)
-                            .addGap(18, 18, 18)
-                            .addComponent(jBtnIncluir)
-                            .addGap(18, 18, 18)
-                            .addComponent(jBtnConfirmar)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(jBtnCancelar)
-                            .addGap(18, 18, 18)
-                            .addComponent(jBtnExcluir)
-                            .addGap(18, 18, 18)
-                            .addComponent(jBtnPesquisar))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jTxtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel1))
-                            .addGap(18, 18, 18)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel2)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel3)
-                                    .addGap(0, 0, Short.MAX_VALUE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jTxtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(jTxtApelido, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jBtnAlterar)
+                        .addGap(18, 18, 18)
+                        .addComponent(jBtnIncluir)
+                        .addGap(18, 18, 18)
+                        .addComponent(jBtnConfirmar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jBtnCancelar)
+                        .addGap(18, 18, 18)
+                        .addComponent(jBtnExcluir)
+                        .addGap(18, 18, 18)
+                        .addComponent(jBtnPesquisar))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTxtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel1))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel3)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jTxtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jTxtApelido, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE))))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -202,6 +246,16 @@ public class JDlgErpUsuario extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed
+        // TODO add your handling code here:
+        jBtnAlterar.setEnabled(false);
+        jBtnExcluir.setEnabled(false);
+        jBtnIncluir.setEnabled(false);
+        jBtnPesquisar.setEnabled(false);
+        jBtnCancelar.setEnabled(true);
+        jBtnConfirmar.setEnabled(true);
+    }//GEN-LAST:event_jBtnCancelarActionPerformed
 
     /**
      * @param args the command line arguments

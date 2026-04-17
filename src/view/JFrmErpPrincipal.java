@@ -15,6 +15,8 @@ public class JFrmErpPrincipal extends javax.swing.JFrame {
      */
     public JFrmErpPrincipal() {
         initComponents();
+        setTitle("Trabalho LP4");
+        setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**

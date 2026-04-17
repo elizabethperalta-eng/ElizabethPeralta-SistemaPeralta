@@ -16,8 +16,26 @@ public class JDlgErpProdutos extends javax.swing.JDialog {
     public JDlgErpProdutos(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+         setTitle("Cadastro de Produtos");
+        setLocationRelativeTo(null);
     }
+ public void habilitar(){
+       jTxtIdProduto.setEnabled(true);
+       jTxtAutor.setEnabled(true);
+       jTxtPreco.setEnabled(true);
+       jTxtIsbn.setEnabled(true);
+       jChbCategoria.setEnabled(true);
+       jTxtTitulo.setEnabled(true);
+       jTxtTradutor.setEnabled(true);
+       jTxtEditora.setEnabled(true);
+       jBtnConfirmar.setEnabled(true);
+       jBtnCancelar.setEnabled(true);
+       jBtnIncluir.setEnabled(false);
+       jBtnAlterar.setEnabled(false);
+       jBtnExcluir.setEnabled(false);
+       jBtnPesquisar.setEnabled(false);
 
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -129,7 +147,7 @@ public class JDlgErpProdutos extends javax.swing.JDialog {
                                 .addComponent(jTxtEditora))
                             .addComponent(jTxtTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 369, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(76, 76, 76)
+                        .addGap(47, 47, 47)
                         .addComponent(jBtnAlterar)
                         .addGap(18, 18, 18)
                         .addComponent(jBtnIncluir)
@@ -141,7 +159,7 @@ public class JDlgErpProdutos extends javax.swing.JDialog {
                         .addComponent(jBtnExcluir)
                         .addGap(18, 18, 18)
                         .addComponent(jBtnPesquisar)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(35, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

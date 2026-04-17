@@ -16,7 +16,10 @@ public class JDlgErpVendedor extends javax.swing.JDialog {
     public JDlgErpVendedor(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+         setTitle("Cadastro de Cdastro de Vendedor");
+        setLocationRelativeTo(null);
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.

@@ -37,22 +37,7 @@ public class JDlgErpUsuario extends javax.swing.JDialog {
        jBtnPesquisar.setEnabled(false);
 
     }
-       public void desabilitar(){
-       jTxtCodigo.setEnabled(false);
-       jTxtNome.setEnabled(false);
-       jTxtApelido.setEnabled(false);
-       jTxtCpf.setEnabled(false);
-       jTxtDataNascimento.setEnabled(false);
-       jCboNivel.setEnabled(false);
-       jPwfSenha.setEnabled(false);
-       jCboAtivo.setEnabled(false);
-       jBtnConfirmar.setEnabled(false);
-       jBtnCancelar.setEnabled(false);
-       jBtnIncluir.setEnabled(true);
-       jBtnAlterar.setEnabled(true);
-       jBtnExcluir.setEnabled(true);
-       jBtnPesquisar.setEnabled(true);
-    }
+      
 
 
 

@@ -43,6 +43,29 @@ public class JDlgErpClientes extends javax.swing.JDialog {
        jBtnExcluir.setEnabled(false);
        jBtnPesquisar.setEnabled(false);
      }
+      public void desabilitar(){
+       jTxtCodigo.setEnabled(true);
+       jTxtNome.setEnabled(true);
+       jTxtApelido.setEnabled(true);
+       jTxtCpf.setEnabled(true);
+       jTxtRg.setEnabled(true);
+       jTxtDataNascimento.setEnabled(true);
+       jTxtEmail.setEnabled(true);
+       jTxtTelefone.setEnabled(true);
+       jTxtEstado.setEnabled(true);
+       jTxtCidade.setEnabled(true);
+       jTxtEndereco.setEnabled(true);
+       jTxtBairro.setEnabled(true);
+       jTxtCep.setEnabled(true);
+       jTxtNumero.setEnabled(true);
+       jCboAtivo.setEnabled(true);
+       jBtnConfirmar.setEnabled(true);
+       jBtnCancelar.setEnabled(true);
+       jBtnIncluir.setEnabled(false);
+       jBtnAlterar.setEnabled(false);
+       jBtnExcluir.setEnabled(false);
+       jBtnPesquisar.setEnabled(false);
+     }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

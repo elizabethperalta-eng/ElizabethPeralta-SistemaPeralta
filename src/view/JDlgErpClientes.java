@@ -4,6 +4,8 @@
  */
 package view;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author u10716099128
@@ -20,51 +22,28 @@ public class JDlgErpClientes extends javax.swing.JDialog {
         setLocationRelativeTo(null);
     }
     
-     public void habilitar(){
-       jTxtCodigo.setEnabled(true);
-       jTxtNome.setEnabled(true);
-       jTxtApelido.setEnabled(true);
-       jTxtCpf.setEnabled(true);
-       jTxtRg.setEnabled(true);
-       jTxtDataNascimento.setEnabled(true);
-       jTxtEmail.setEnabled(true);
-       jTxtTelefone.setEnabled(true);
-       jTxtEstado.setEnabled(true);
-       jTxtCidade.setEnabled(true);
-       jTxtEndereco.setEnabled(true);
-       jTxtBairro.setEnabled(true);
-       jTxtCep.setEnabled(true);
-       jTxtNumero.setEnabled(true);
-       jCboAtivo.setEnabled(true);
-       jBtnConfirmar.setEnabled(true);
-       jBtnCancelar.setEnabled(true);
-       jBtnIncluir.setEnabled(false);
-       jBtnAlterar.setEnabled(false);
-       jBtnExcluir.setEnabled(false);
-       jBtnPesquisar.setEnabled(false);
-     }
-      public void desabilitar(){
-       jTxtCodigo.setEnabled(true);
-       jTxtNome.setEnabled(true);
-       jTxtApelido.setEnabled(true);
-       jTxtCpf.setEnabled(true);
-       jTxtRg.setEnabled(true);
-       jTxtDataNascimento.setEnabled(true);
-       jTxtEmail.setEnabled(true);
-       jTxtTelefone.setEnabled(true);
-       jTxtEstado.setEnabled(true);
-       jTxtCidade.setEnabled(true);
-       jTxtEndereco.setEnabled(true);
-       jTxtBairro.setEnabled(true);
-       jTxtCep.setEnabled(true);
-       jTxtNumero.setEnabled(true);
-       jCboAtivo.setEnabled(true);
-       jBtnConfirmar.setEnabled(true);
-       jBtnCancelar.setEnabled(true);
-       jBtnIncluir.setEnabled(false);
-       jBtnAlterar.setEnabled(false);
-       jBtnExcluir.setEnabled(false);
-       jBtnPesquisar.setEnabled(false);
+     public void habilitar(boolean valor){
+       jTxtCodigo.setEnabled(valor);
+       jTxtNome.setEnabled(valor);
+       jTxtApelido.setEnabled(valor);
+       jTxtCpf.setEnabled(valor);
+       jTxtRg.setEnabled(valor);
+       jTxtDataNascimento.setEnabled(valor);
+       jTxtEmail.setEnabled(valor);
+       jTxtTelefone.setEnabled(valor);
+       jTxtEstado.setEnabled(valor);
+       jTxtCidade.setEnabled(valor);
+       jTxtEndereco.setEnabled(valor);
+       jTxtBairro.setEnabled(valor);
+       jTxtCep.setEnabled(valor);
+       jTxtNumero.setEnabled(valor);
+       jCboAtivo.setEnabled(valor);
+       jBtnConfirmar.setEnabled(valor);
+       jBtnCancelar.setEnabled(valor);
+       jBtnIncluir.setEnabled(!valor);
+       jBtnAlterar.setEnabled(!valor);
+       jBtnExcluir.setEnabled(!valor);
+       jBtnPesquisar.setEnabled(!valor);
      }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -150,21 +129,51 @@ public class JDlgErpClientes extends javax.swing.JDialog {
 
         jBtnAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
         jBtnAlterar.setText("Alterar:");
+        jBtnAlterar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnAlterarActionPerformed(evt);
+            }
+        });
 
         jBtnIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
         jBtnIncluir.setText("Incluir:");
+        jBtnIncluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnIncluirActionPerformed(evt);
+            }
+        });
 
         jBtnConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
         jBtnConfirmar.setText("Confirmar:");
+        jBtnConfirmar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnConfirmarActionPerformed(evt);
+            }
+        });
 
         jBtnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
         jBtnCancelar.setText("Cancelar:");
+        jBtnCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnCancelarActionPerformed(evt);
+            }
+        });
 
         jBtnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
         jBtnExcluir.setText("Excluir:");
+        jBtnExcluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnExcluirActionPerformed(evt);
+            }
+        });
 
         jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
         jBtnPesquisar.setText("Pesquisar:");
+        jBtnPesquisar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnPesquisarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -330,6 +339,36 @@ public class JDlgErpClientes extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jBtnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterarActionPerformed
+        habilitar(rootPaneCheckingEnabled);
+// TODO add your handling code here:
+    }//GEN-LAST:event_jBtnAlterarActionPerformed
+
+    private void jBtnIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIncluirActionPerformed
+       habilitar(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnIncluirActionPerformed
+
+    private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
+       habilitar(!rootPaneCheckingEnabled);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnConfirmarActionPerformed
+
+    private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed
+        habilitar(!true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnCancelarActionPerformed
+
+    private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
+        JOptionPane.showConfirmDialog(null, "Confirmar Exclusão", "Selecione uma opção", JOptionPane.YES_NO_OPTION);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnExcluirActionPerformed
+
+    private void jBtnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisarActionPerformed
+        JOptionPane.showInputDialog(null, "Entre com a chave primaria");
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnPesquisarActionPerformed
 
     /**
      * @param args the command line arguments

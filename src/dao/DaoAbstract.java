@@ -6,7 +6,7 @@ package dao;
 
 /**
  *
- * @author u07880060103
+ * @author u10716099128
  */
 public abstract class DaoAbstract {
     public abstract void insert(Object object);

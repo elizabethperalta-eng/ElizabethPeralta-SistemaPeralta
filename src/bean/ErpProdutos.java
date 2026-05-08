@@ -9,110 +9,126 @@ package bean;
  * @author u10716099128
  */
 public class ErpProdutos {
-    private int erpIdCompraProduto;
-    private int erpQuantidade;
-    private Double erpValorUnitario;
-    private Double erpDesconto;
-    private Double erpSubtotal;
-    private int erpCompras;
-    private int erpPprodutos;
+     private int erpIdProduto;
+    private String erpTitulo;
+    private String erpAutor;
+    private String erpEditora;
+    private int erpTradutor;
+    private String erpCategoria;
+    private String erpIsbn;
+    private Double erpPreco;
 
     /**
-     * @return the erpIdCompraProduto
+     * @return the erpIdProduto
      */
-    public int getErpIdCompraProduto() {
-        return erpIdCompraProduto;
+    public int getErpIdProduto() {
+        return erpIdProduto;
     }
 
     /**
-     * @param erpIdCompraProduto the erpIdCompraProduto to set
+     * @param erpIdProduto the erpIdProduto to set
      */
-    public void setErpIdCompraProduto(int erpIdCompraProduto) {
-        this.erpIdCompraProduto = erpIdCompraProduto;
+    public void setErpIdProduto(int erpIdProduto) {
+        this.erpIdProduto = erpIdProduto;
     }
 
     /**
-     * @return the erpQuantidade
+     * @return the erpTitulo
      */
-    public int getErpQuantidade() {
-        return erpQuantidade;
+    public String getErpTitulo() {
+        return erpTitulo;
     }
 
     /**
-     * @param erpQuantidade the erpQuantidade to set
+     * @param erpTitulo the erpTitulo to set
      */
-    public void setErpQuantidade(int erpQuantidade) {
-        this.erpQuantidade = erpQuantidade;
+    public void setErpTitulo(String erpTitulo) {
+        this.erpTitulo = erpTitulo;
     }
 
     /**
-     * @return the erpValorUnitario
+     * @return the erpAutor
      */
-    public Double getErpValorUnitario() {
-        return erpValorUnitario;
+    public String getErpAutor() {
+        return erpAutor;
     }
 
     /**
-     * @param erpValorUnitario the erpValorUnitario to set
+     * @param erpAutor the erpAutor to set
      */
-    public void setErpValorUnitario(Double erpValorUnitario) {
-        this.erpValorUnitario = erpValorUnitario;
+    public void setErpAutor(String erpAutor) {
+        this.erpAutor = erpAutor;
     }
 
     /**
-     * @return the erpDesconto
+     * @return the erpEditora
      */
-    public Double getErpDesconto() {
-        return erpDesconto;
+    public String getErpEditora() {
+        return erpEditora;
     }
 
     /**
-     * @param erpDesconto the erpDesconto to set
+     * @param erpEditora the erpEditora to set
      */
-    public void setErpDesconto(Double erpDesconto) {
-        this.erpDesconto = erpDesconto;
+    public void setErpEditora(String erpEditora) {
+        this.erpEditora = erpEditora;
     }
 
     /**
-     * @return the erpSubtotal
+     * @return the erpTradutor
      */
-    public Double getErpSubtotal() {
-        return erpSubtotal;
+    public int getErpTradutor() {
+        return erpTradutor;
     }
 
     /**
-     * @param erpSubtotal the erpSubtotal to set
+     * @param erpTradutor the erpTradutor to set
      */
-    public void setErpSubtotal(Double erpSubtotal) {
-        this.erpSubtotal = erpSubtotal;
+    public void setErpTradutor(int erpTradutor) {
+        this.erpTradutor = erpTradutor;
     }
 
     /**
-     * @return the erpCompras
+     * @return the erpCategoria
      */
-    public int getErpCompras() {
-        return erpCompras;
+    public String getErpCategoria() {
+        return erpCategoria;
     }
 
     /**
-     * @param erpCompras the erpCompras to set
+     * @param erpCategoria the erpCategoria to set
      */
-    public void setErpCompras(int erpCompras) {
-        this.erpCompras = erpCompras;
+    public void setErpCategoria(String erpCategoria) {
+        this.erpCategoria = erpCategoria;
     }
 
     /**
-     * @return the erpPprodutos
+     * @return the erpIsbn
      */
-    public int getErpPprodutos() {
-        return erpPprodutos;
+    public String getErpIsbn() {
+        return erpIsbn;
     }
 
     /**
-     * @param erpPprodutos the erpPprodutos to set
+     * @param erpIsbn the erpIsbn to set
      */
-    public void setErpPprodutos(int erpPprodutos) {
-        this.erpPprodutos = erpPprodutos;
+    public void setErpIsbn(String erpIsbn) {
+        this.erpIsbn = erpIsbn;
+    }
+
+    /**
+     * @return the erpPreco
+     */
+    public Double getErpPreco() {
+        return erpPreco;
+    }
+
+    /**
+     * @param erpPreco the erpPreco to set
+     */
+    public void setErpPreco(Double erpPreco) {
+        this.erpPreco = erpPreco;
     }
    
+    
 }

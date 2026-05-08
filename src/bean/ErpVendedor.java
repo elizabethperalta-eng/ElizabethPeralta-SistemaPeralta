@@ -9,7 +9,7 @@ package bean;
  * @author u10716099128
  */
 public class ErpVendedor {
-    private int erpVendedor;
+    private int erpIdVendedor;
     private String erpNome;
     private String erpEmail;
     private String erpCpf;
@@ -20,15 +20,15 @@ public class ErpVendedor {
     /**
      * @return the erpVendedor
      */
-    public int getErpVendedor() {
-        return erpVendedor;
+    public int getErpIdVendedor() {
+        return erpIdVendedor;
     }
 
     /**
-     * @param erpVendedor the erpVendedor to set
+     * @param erpIdVendedor the erpIdVendedor to set
      */
-    public void setErpVendedor(int erpVendedor) {
-        this.erpVendedor = erpVendedor;
+    public void setErpIdVendedor(int erpIdVendedor) {
+        this.erpIdVendedor = erpIdVendedor;
     }
 
     /**

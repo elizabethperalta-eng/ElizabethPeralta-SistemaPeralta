@@ -2,16 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/u10716099128/Documents/NetBeansProjects/SistemaPeralta/src/bean/ErpFornecedores.java</file>
-            <file>file:/C:/Users/u10716099128/Documents/NetBeansProjects/SistemaPeralta/src/dao/DaoErpUsuarios.java</file>
-            <file>file:/C:/Users/u10716099128/Documents/NetBeansProjects/SistemaPeralta/src/bean/ErpVendedor.java</file>
-            <file>file:/C:/Users/u10716099128/Documents/NetBeansProjects/SistemaPeralta/src/bean/ErpProdutos.java</file>
-            <file>file:/C:/Users/u10716099128/Documents/NetBeansProjects/SistemaPeralta/src/bean/ErpVendasProdutos.java</file>
-            <file>file:/C:/Users/u10716099128/Documents/NetBeansProjects/SistemaPeralta/src/view/JDlgErpClientes.java</file>
-            <file>file:/C:/Users/u10716099128/Documents/NetBeansProjects/SistemaPeralta/src/bean/ErpUsuarios.java</file>
-            <file>file:/C:/Users/u10716099128/Documents/NetBeansProjects/SistemaPeralta/src/dao/DaoAbstract.java</file>
-            <file>file:/C:/Users/u10716099128/Documents/NetBeansProjects/SistemaPeralta/src/bean/ErpVendas.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

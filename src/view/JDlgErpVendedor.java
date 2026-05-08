@@ -20,6 +20,7 @@ public class JDlgErpVendedor extends javax.swing.JDialog {
         initComponents();
          setTitle("Cadastro de Cdastro de Vendedor");
         setLocationRelativeTo(null);
+        habilitar(false);
     }
      public void habilitar(boolean valor){
        jTxtCodigo.setEnabled(valor);

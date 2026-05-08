@@ -20,6 +20,8 @@ public class JDlgErpProdutos extends javax.swing.JDialog {
         initComponents();
          setTitle("Cadastro de Produtos");
         setLocationRelativeTo(null);
+         habilitar(false);
+
     }
  public void habilitar(boolean valor){
        jTxtIdProduto.setEnabled(valor);

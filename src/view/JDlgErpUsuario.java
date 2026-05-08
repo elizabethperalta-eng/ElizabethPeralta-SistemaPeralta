@@ -20,6 +20,8 @@ public class JDlgErpUsuario extends javax.swing.JDialog {
         initComponents();
         setTitle("Cadastro de Usuários");
         setLocationRelativeTo(null);
+        habilitar(false);
+
     }
     
        public void habilitar(boolean valor){

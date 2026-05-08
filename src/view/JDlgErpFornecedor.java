@@ -19,7 +19,9 @@ public class JDlgErpFornecedor extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
          setTitle("Cadastro de Fornecedores");
-        setLocationRelativeTo(null);
+        setLocationRelativeTo(null);       
+        habilitar(false);
+
     }
     
      public void habilitar(boolean valor){

@@ -20,6 +20,8 @@ public class JDlgErpClientes extends javax.swing.JDialog {
         initComponents();
          setTitle("Cadastro de Clientes");
         setLocationRelativeTo(null);
+         habilitar(false);
+
     }
     
      public void habilitar(boolean valor){
